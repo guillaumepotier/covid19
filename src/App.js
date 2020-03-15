@@ -172,6 +172,8 @@ class App extends React.Component {
           </ResponsiveContainer>
 
         </div>
+
+        <div className="Disclaimer">Inspired by <a href="https://sciencetonnante.wordpress.com/2020/03/12/epidemie-nuage-radioactif-et-distanciation-sociale/">this article (FR).</a></div>
       </div>
     );
   }
