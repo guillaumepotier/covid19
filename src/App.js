@@ -29,9 +29,9 @@ class App extends React.Component {
       population: 67000000,
       dailyContacts: 40,
       transmissionProbability: 0.5,
-      illnessDuration: 10,
+      illnessDuration: 12,
       averageMortalityRate: 2,
-      totalAvailableBeds: 15000,
+      totalAvailableBeds: 20000,
       increasingMortalityRate: 1
     };
   }
@@ -152,8 +152,8 @@ class App extends React.Component {
               <CartesianGrid strokeDasharray="3 3" />
               <Tooltip />
               <Legend />
-              <Area type="monotone" dataKey="total_healthy" stroke="#8884d8" fillOpacity={1} fill="url(#colorHealthy)" />
-              <Area type="monotone" dataKey="total_ill" stroke="#82ca9d" fillOpacity={1} fill="url(#colorIll)" />
+              <Area type="monotone" dataKey="total_ill" stroke="#8884d8" fillOpacity={1} fill="url(#colorHealthy)" />
+              <Area type="monotone" dataKey="total_healthy" stroke="#82ca9d" fillOpacity={1} fill="url(#colorIll)" />
               <Area type="monotone" dataKey="total_deceased" stroke="#ff5e5e" fillOpacity={1} fill="url(#colorDead)" />
             </AreaChart>
           </ResponsiveContainer>
